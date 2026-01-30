@@ -30,14 +30,22 @@ window.addEventListener("scroll", () => {
   });
 });
 
-// Hide loader after page load
-window.addEventListener("load", () => {
-  const loader = document.getElementById("pageLoader");
-  loader.style.opacity = "0";
-  loader.style.pointerEvents = "none";
+const form=document.getElementById("contactForm");
+form.addEventListener("submit",async(e)=>{
+  e.preventDefault();
+  const formData=new FormData(form);
+  const response = await fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    body: formData
+  });
+const result=await response.json();
+console.log(result);
+if(result.success){
+  alert(`Thank you, ${result.data.name}, for reaching out. we will get back to you soon.`);
+    form.reset();
+}
+else{
+      alert(`Something went wrong! ${result.message}`);
 
-  setTimeout(() => {
-    loader.style.display = "none";
-  }, 300);
-});
-
+}
+})
