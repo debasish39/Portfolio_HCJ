@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+   scrollbar-width: thin;
+  scrollbar-color: #ff9800 #0b0b0b;
 }
 :root {
   --bg-dark: #0b0b0b;
@@ -23,16 +25,17 @@ body {
   background:
     radial-gradient(
       circle at 30% 30%,
-      rgba(111, 71, 6, 0.162),
-      transparent 40%
+      rgba(97, 60, 1, 0.511),
+      transparent 30%
     ),
     radial-gradient(
       circle at 80% 70%,
-      rgba(145, 89, 4, 0.175),
+      rgba(98, 59, 1, 0.504),
       transparent 40%
     ),
-    linear-gradient(to right, #050505, #111);
+    linear-gradient(to bottom, #442d012e, #111111);
   color: var(--text-muted);
+  overflow;
 }
 
 .navbar {
@@ -172,13 +175,6 @@ body {
 /* Hero layout with image */
 .hero {
   min-height: 80vh;
-  background:
-    radial-gradient(
-      circle at 20% 30%,
-      rgba(255, 152, 0, 0.15),
-      transparent 40%
-    ),
-    radial-gradient(circle at 80% 70%, rgba(255, 152, 0, 0.1), transparent 40%);
   color: var(--text-light);
   display: flex;
   align-items: center;
@@ -357,15 +353,7 @@ body {
   margin-bottom: 1rem;
 }
 
-.skills-section {
-  background:
-    radial-gradient(
-      circle at 20% 30%,
-      rgba(255, 152, 0, 0.15),
-      transparent 40%
-    ),
-    radial-gradient(circle at 80% 70%, rgba(255, 152, 0, 0.1), transparent 40%);
-}
+
 
 .skills-grid {
   max-width: 1100px;
@@ -418,15 +406,7 @@ body {
     text-align: center;
   }
 }
-.projects-section {
-  background:
-    radial-gradient(
-      circle at 20% 30%,
-      rgba(255, 152, 0, 0.15),
-      transparent 40%
-    ),
-    radial-gradient(circle at 80% 70%, rgba(255, 152, 0, 0.1), transparent 40%);
-}
+
 .projects-grid {
   max-width: 1100px;
   margin: 2rem auto;
@@ -470,7 +450,7 @@ body {
 
 .project-links a {
   text-decoration: none;
-  color: #ff9900d4;
+  /* color: #ff9900d4; */
   font-weight: 600;
   cursor: pointer;
 }
@@ -484,16 +464,7 @@ body {
   box-shadow: 0 15px 30px rgba(255, 152, 0, 0.2);
 }
 
-.contact-section {
-  background:
-    radial-gradient(
-      circle at 20% 30%,
-      rgba(255, 152, 0, 0.15),
-      transparent 40%
-    ),
-    radial-gradient(circle at 80% 70%, rgba(255, 152, 0, 0.1), transparent 40%);
-  box-shadow: 0 -8px 25px rgba(0, 0, 0, 0.6);
-}
+
 .contact-form {
   max-width: 600px;
   margin: 2rem auto 1.5rem;
@@ -664,9 +635,4 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(180deg, #ffb347, #ff9800);
-}
-
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #ff9800 #0b0b0b;
 }
