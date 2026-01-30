@@ -4,11 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Theme & UI -->
     <meta name="theme-color" content="#ad4b06" />
     <meta name="color-scheme" content="dark" />
 
-    <!-- Primary SEO -->
     <title>Debasish Portfolio</title>
     <meta
       name="description"
@@ -17,7 +15,6 @@
     <meta name="author" content="Debasish Panda" />
     <meta name="robots" content="index, follow" />
 
-    <!-- Open Graph / Social -->
     <meta property="og:title" content="Debasish Portfolio" />
     <meta
       property="og:description"
@@ -30,7 +27,6 @@
       content="https://portfolio.debasish.xyz/images/profile.png"
     />
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Debasish Portfolio" />
     <meta
@@ -42,10 +38,8 @@
       content="https://portfolio.debasish.xyz/images/profile.png"
     />
 
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/profile.png" />
 
-    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -57,42 +51,56 @@
       rel="stylesheet"
     />
 
-    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   </head>
 
   <body>
     <header>
-      <nav class="navbar">
-        <h1 class="logo">Debasish</h1>
+      <nav class="navbar" data-aos="fade-down" data-aos-duration="900">
+        <h1
+          class="logo"
+          data-aos="zoom-in"
+          data-aos-delay="150"
+          data-aos-duration="800"
+        >
+          Debasish
+        </h1>
 
-        <button class="menu-toggle" aria-label="Toggle navigation menu">
+        <button
+          class="menu-toggle"
+          aria-label="Toggle navigation menu"
+          data-aos="fade-left"
+          data-aos-delay="250"
+          data-aos-duration="800"
+        >
           <i class="fa-solid fa-bars open-icon"></i>
           <i class="fa-solid fa-xmark close-icon"></i>
         </button>
 
         <ul class="nav-links">
-          <li>
+          <li data-aos="fade-down" data-aos-delay="200">
             <a href="#">
               <i class="fa fa-home" aria-hidden="true"></i>
               Home
             </a>
           </li>
-          <li>
+
+          <li data-aos="fade-down" data-aos-delay="300">
             <a href="#skills">
               <i class="fa-solid fa-code"></i>
               Skills
             </a>
           </li>
 
-          <li>
+          <li data-aos="fade-down" data-aos-delay="400">
             <a href="#projects">
               <i class="fa-solid fa-briefcase"></i>
               Projects
             </a>
           </li>
 
-          <li>
+          <li data-aos="fade-down" data-aos-delay="500">
             <a href="#contact">
               <i class="fa-solid fa-envelope"></i>
               Contact
@@ -102,28 +110,40 @@
       </nav>
     </header>
 
-    <!-- HERO -->
     <section class="hero" id="hero">
       <div class="hero-content">
-        <div class="hero-text">
-          <span class="badge">Python Developer</span>
+        <div
+          class="hero-text"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+        >
+          <span
+            class="badge"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+            data-aos-duration="700"
+          >
+            Python Developer
+          </span>
 
-          <h3>
+          <h3 data-aos="fade-up" data-aos-delay="450" data-aos-duration="900">
             Hello, I’m <span>Debasish Panda</span>, a Python Full Stack
             Developer passionate about building clean, scalable, and
             user-focused web applications using <strong>React</strong> and
             <strong>Django</strong>.
           </h3>
 
-          <div class="social-icons">
+          <div class="social-icons" data-aos="fade-up" data-aos-delay="650">
             <a
               href="https://github.com/debasish39"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
             >
-              <i class="fa-brands fa-github"> </i>
+              <i class="fa-brands fa-github"></i>
             </a>
+
             <a
               href="https://www.linkedin.com/in/debasish-panda-857715314/"
               target="_blank"
@@ -132,26 +152,40 @@
             >
               <i class="fa-brands fa-linkedin"></i>
             </a>
-            <a href="mailto:djproject963@gmail.com"
-              ><i class="fa-solid fa-envelope"></i
-            ></a>
+
+            <a href="mailto:djproject963@gmail.com" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
           </div>
 
-          <a href="#projects" class="btn"> Explore My Work </a>
+          <a
+            href="#projects"
+            class="btn"
+            data-aos="fade-up"
+            data-aos-delay="850"
+          >
+            Explore My Work
+          </a>
         </div>
 
-        <div class="hero-image">
+        <div
+          class="hero-image"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+        >
           <img src="images/profile.png" alt="Debasish Panda profile photo" />
         </div>
       </div>
     </section>
 
     <section id="skills" class="section skills-section">
-      <h2 class="section-title">Skills & Technologies</h2>
+      <h2 class="section-title" data-aos="fade-up" data-aos-duration="900">
+        Skills & Technologies
+      </h2>
 
       <div class="skills-grid">
-        <!-- Frontend -->
-        <div class="skill-group">
+        <div class="skill-group" data-aos="zoom-in" data-aos-delay="100">
           <h3>Frontend</h3>
           <div class="skill-tags">
             <span>HTML5</span>
@@ -165,8 +199,7 @@
           </div>
         </div>
 
-        <!-- Backend -->
-        <div class="skill-group">
+        <div class="skill-group" data-aos="zoom-in" data-aos-delay="250">
           <h3>Backend</h3>
           <div class="skill-tags">
             <span>Python</span>
@@ -176,8 +209,7 @@
           </div>
         </div>
 
-        <!-- Tools -->
-        <div class="skill-group">
+        <div class="skill-group" data-aos="zoom-in" data-aos-delay="400">
           <h3>Tools & Platforms</h3>
           <div class="skill-tags">
             <span>VS Code</span>
@@ -190,8 +222,7 @@
           </div>
         </div>
 
-        <!-- Database -->
-        <div class="skill-group">
+        <div class="skill-group" data-aos="zoom-in" data-aos-delay="550">
           <h3>Database</h3>
           <div class="skill-tags">
             <span>MySQL</span>
@@ -202,12 +233,13 @@
       </div>
     </section>
 
-    <!-- PROJECTS -->
     <section id="projects" class="section projects-section">
-      <h2 class="section-title">Projects</h2>
+      <h2 class="section-title" data-aos="fade-up" data-aos-duration="900">
+        Projects
+      </h2>
 
       <div class="projects-grid">
-        <div class="project-card">
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
           <img src="images/blogzone.png" alt="BlogZone" />
           <h3>BlogZone</h3>
           <p>Modern blogging platform built with React & Tailwind CSS (PWA).</p>
@@ -217,19 +249,19 @@
               target="_blank"
               rel="noopener"
             >
-              <i class="fa-solid fa-globe"></i> Live Live</a
-            >
+              <i class="fa-solid fa-globe"></i> Live
+            </a>
             <a
               href="https://github.com/debasish39/BlogZone"
               target="_blank"
               rel="noopener"
             >
-              <i class="fa-brands fa-github"></i> GitHub</a
-            >
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
           <img src="images/eshop.png" alt="E-Shop" />
           <h3>E-Shop</h3>
           <p>Full-featured e-commerce app with cart and checkout.</p>
@@ -239,18 +271,19 @@
               target="_blank"
               rel="noopener"
             >
-              <i class="fa-solid fa-globe"></i> Live Live</a
-            >
+              <i class="fa-solid fa-globe"></i> Live
+            </a>
             <a
               href="https://github.com/debasish39/E-Commerce"
               target="_blank"
               rel="noopener"
-              ><i class="fa-brands fa-github"></i> GitHub</a
             >
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
           <img src="images/jwt.png" alt="JWT Auth" />
           <h3>JWT Authentication</h3>
           <p>Secure authentication using Django REST Framework & JWT.</p>
@@ -260,35 +293,37 @@
               target="_blank"
               rel="noopener"
             >
-              <i class="fa-solid fa-globe"></i> Live Live</a
-            >
+              <i class="fa-solid fa-globe"></i> Live
+            </a>
             <a
               href="https://github.com/debasish39/jwt-authentication"
               target="_blank"
               rel="noopener"
-              ><i class="fa-brands fa-github"></i> GitHub</a
             >
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-aos="fade-up" data-aos-delay="400">
           <img src="images/blog.png" alt="Blog App" />
           <h3>Blog App</h3>
           <p>Full-stack Django blog with authentication.</p>
           <div class="project-links">
             <a href="https://blog.debasish.xyz/" target="_blank" rel="noopener">
-              <i class="fa-solid fa-globe"></i> Live Live</a
-            >
+              <i class="fa-solid fa-globe"></i> Live
+            </a>
             <a
               href="https://github.com/debasish39/Blog-with-Authentication"
               target="_blank"
               rel="noopener"
-              ><i class="fa-brands fa-github"></i> GitHub</a
             >
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-aos="fade-up" data-aos-delay="500">
           <img src="images/quote.png" alt="Quote Generator" />
           <h3>Quote Generator</h3>
           <p>Random inspirational quotes generator.</p>
@@ -298,31 +333,33 @@
               target="_blank"
               rel="noopener"
             >
-              <i class="fa-solid fa-globe"></i> Live Live</a
-            >
+              <i class="fa-solid fa-globe"></i> Live
+            </a>
             <a
               href="https://github.com/debasish39/quote-generator"
               target="_blank"
               rel="noopener"
-              ><i class="fa-brands fa-github"></i> GitHub</a
             >
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-aos="fade-up" data-aos-delay="600">
           <img src="images/todo.png" alt="Todo App" />
           <h3>Todo App</h3>
           <p>Task management app built with React & Redux.</p>
           <div class="project-links">
             <a href="https://todo.debasish.xyz/" target="_blank" rel="noopener">
-              <i class="fa-solid fa-globe"></i> Live Live</a
-            >
+              <i class="fa-solid fa-globe"></i> Live
+            </a>
             <a
               href="https://github.com/debasish39/Todo_Redux"
               target="_blank"
               rel="noopener"
-              ><i class="fa-brands fa-github"></i> GitHub</a
             >
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
           </div>
         </div>
       </div>
@@ -332,23 +369,35 @@
         target="_blank"
         rel="noopener"
         class="btn"
+        data-aos="zoom-in"
+        data-aos-delay="700"
       >
         View All Projects on GitHub <i class="fa-brands fa-github"></i>
       </a>
     </section>
 
-    <section id="contact" class="section contact-section bg-dark">
-      <h2 class="section-title">Contact Me</h2>
+    <section
+      id="contact"
+      class="section contact-section bg-dark"
+      data-aos="fade-up"
+      data-aos-duration="900"
+    >
+      <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+        Contact Me
+      </h2>
 
-      <form id="contactForm" class="contact-form">
-        <!-- REQUIRED -->
+      <form
+        id="contactForm"
+        class="contact-form"
+        data-aos="zoom-in"
+        data-aos-delay="250"
+      >
         <input
           type="hidden"
           name="access_key"
           value="37899bb7-f8ed-4536-afb1-0c4c2dc5e2eb"
         />
 
-        <!-- Optional settings -->
         <input
           type="hidden"
           name="subject"
@@ -356,17 +405,21 @@
         />
         <input type="hidden" name="from_name" value="Debasish Portfolio" />
 
-        <div class="input-group">
+        <div class="input-group" data-aos="fade-right" data-aos-delay="350">
           <i class="fa-solid fa-user"></i>
           <input type="text" name="name" placeholder="Your Name" required />
         </div>
 
-        <div class="input-group">
+        <div class="input-group" data-aos="fade-left" data-aos-delay="450">
           <i class="fa-solid fa-envelope"></i>
           <input type="email" name="email" placeholder="Your Email" required />
         </div>
 
-        <div class="input-group textarea-group">
+        <div
+          class="input-group textarea-group"
+          data-aos="fade-up"
+          data-aos-delay="550"
+        >
           <i class="fa-solid fa-message"></i>
           <textarea
             name="message"
@@ -376,15 +429,24 @@
           ></textarea>
         </div>
 
-        <button type="submit" class="btn">
+        <button
+          type="submit"
+          class="btn"
+          data-aos="zoom-in"
+          data-aos-delay="700"
+        >
           <i class="fa-solid fa-paper-plane"></i> Send Message
         </button>
       </form>
-
-      <!-- Optional contact info icons -->
     </section>
 
-    <button id="scrollTopBtn" aria-label="Scroll to top">
+    <button
+      id="scrollTopBtn"
+      aria-label="Scroll to top"
+      data-aos="zoom-in"
+      data-aos-duration="600"
+      data-aos-delay="200"
+    >
       <i class="fa-solid fa-arrow-up"></i>
     </button>
 
@@ -405,7 +467,7 @@
             ><i class="fa-brands fa-github"></i
           ></a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/debasish-panda-857715314/"
             target="_blank"
             rel="noopener noreferrer"
             ><i class="fa-brands fa-linkedin"></i
@@ -424,5 +486,14 @@
     </script>
 
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        easing: "ease-in-out",
+        once: false,
+        offset: 120,
+      });
+    </script>
   </body>
 </html>

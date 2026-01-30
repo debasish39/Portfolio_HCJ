@@ -35,7 +35,6 @@ body {
   color: var(--text-muted);
 }
 
-/* ===== NAVBAR ===== */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -60,11 +59,11 @@ body {
 }
 .logo {
   font-family: "Satisfy", cursive;
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-weight: 300;
   letter-spacing: 1.5px;
 
-  background: linear-gradient(135deg, #a96b2d, #ef7117d8);
+  background: linear-gradient(135deg, #cd7014, #ff9500d8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -89,7 +88,6 @@ body {
   transition: color 0.3s ease;
 }
 
-/* Hover underline animation */
 .nav-links li a::after {
   content: "";
   position: absolute;
@@ -109,7 +107,6 @@ body {
   width: 100%;
 }
 
-/* ===== MENU TOGGLE ===== */
 .menu-toggle {
   display: none;
   font-size: 1.2rem;
@@ -136,7 +133,6 @@ body {
   display: inline-block;
 }
 
-/* ===== MOBILE NAV ===== */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
@@ -248,7 +244,6 @@ body {
   border: 0.3px solid rgba(255, 255, 255, 0.3);
 }
 
-/* Tablets */
 @media (max-width: 992px) {
   .hero-content {
     gap: 3rem;
@@ -268,7 +263,6 @@ body {
   }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
   .hero {
     min-height: auto;
@@ -296,7 +290,6 @@ body {
   }
 }
 
-/* Small devices */
 @media (max-width: 480px) {
   .hero-text h2 {
     font-size: 1.8rem;
@@ -308,7 +301,6 @@ body {
   }
 }
 
-/* Buttons */
 .btn {
   margin-top: 1rem;
   padding: 0.75rem 1.8rem;
@@ -334,7 +326,6 @@ body {
   font-size: 0.85rem;
 }
 
-/* Social Icons */
 .social-icons {
   margin: 1.2rem 0;
 }
@@ -352,7 +343,6 @@ body {
   text-shadow: 0 0 10px rgba(255, 152, 0, 0.6);
 }
 
-/* Sections */
 .section {
   padding: 4rem 2rem;
   text-align: center;
@@ -367,7 +357,6 @@ body {
   margin-bottom: 1rem;
 }
 
-/* SKILLS */
 .skills-section {
   background:
     radial-gradient(
@@ -417,21 +406,18 @@ body {
   transition: all 0.3s ease;
 }
 
-/* Hover effect */
 .skill-tags span:hover {
   background: linear-gradient(to right, #ff9800, #ffb347);
   cursor: pointer;
   color: #000;
   transform: translateY(-3px);
 }
-/* RESPONSIVE */
 @media (max-width: 768px) {
   .about-container {
     grid-template-columns: 1fr;
     text-align: center;
   }
 }
-/* Projects */
 .projects-section {
   background:
     radial-gradient(
@@ -498,7 +484,6 @@ body {
   box-shadow: 0 15px 30px rgba(255, 152, 0, 0.2);
 }
 
-/* Contact */
 .contact-section {
   background:
     radial-gradient(
@@ -517,7 +502,6 @@ body {
   gap: 1.2rem;
 }
 
-/* Input group */
 .input-group {
   display: flex;
   align-items: center;
@@ -545,7 +529,6 @@ body {
   resize: vertical;
 }
 
-/* Focus effect */
 .input-group:focus-within {
   border-color: rgba(255, 152, 0, 0.4);
   box-shadow: 0 0 15px rgba(255, 152, 0, 0.4);
@@ -558,7 +541,6 @@ body {
   margin-top: 0.3rem;
 }
 
-/* Icon base */
 .footer-icons a {
   position: relative;
   width: 33px;
@@ -575,7 +557,6 @@ body {
   overflow: hidden;
 }
 
-/* Soft glow */
 .footer-icons a::after {
   content: "";
   position: absolute;
@@ -586,7 +567,6 @@ body {
   transition: opacity 0.35s ease;
 }
 
-/* Hover effects */
 .footer-icons a:hover {
   transform: translateY(-6px) scale(1.12);
   box-shadow:
@@ -598,7 +578,6 @@ body {
   opacity: 1;
 }
 
-/* Click feedback */
 .footer-icons a:active {
   transform: scale(0.95);
 }
@@ -629,7 +608,6 @@ body {
   transform: translateY(-5px);
   box-shadow: 0 12px 30px rgba(255, 152, 0, 0.6);
 }
-/* ===== FOOTER ===== */
 footer {
   background: linear-gradient(to right, #000, #111);
   color: var(--text-light);
@@ -639,7 +617,6 @@ footer {
   box-shadow: 0 -8px 25px rgba(0, 0, 0, 0.6);
 }
 
-/* Divider line */
 footer::before {
   content: "";
   position: absolute;
@@ -651,7 +628,6 @@ footer::before {
   transform: translateX(-50%);
 }
 
-/* Footer text */
 footer p {
   font-size: 0.85rem;
   color: var(--text-muted);
@@ -677,34 +653,6 @@ html {
     margin-bottom: 1rem;
   }
 }
-
-/* Page Loader */
-#pageLoader {
-  position: fixed;
-  inset: 0;
-  background: #0f0f0f;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 3000;
-}
-
-.spinner {
-  width: 50px;
-  height: 50px;
-  border: 5px solid #2d2d2d;
-  border-top: 5px solid #ffd700;
-  border-radius: 50%;
-  animation: spin 12s linear infinite;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -718,7 +666,6 @@ html {
   background: linear-gradient(180deg, #ffb347, #ff9800);
 }
 
-/* Firefox */
 * {
   scrollbar-width: thin;
   scrollbar-color: #ff9800 #0b0b0b;
