@@ -25,11 +25,9 @@ body {
       transparent 40%
     ),
     linear-gradient(to bottom, #442d012e, #111111);
-  color: var(--text-muted);
-  /* overflow; */
+
 }
 
-/* ===== NAVBAR BASE ===== */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -55,7 +53,6 @@ body {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45);
 }
 
-/* ===== LOGO ===== */
 .logo {
   font-family: "Satisfy", cursive;
   font-size: 1.3rem;
@@ -66,7 +63,6 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-/* ===== NAV LINKS ===== */
 .nav-links {
   list-style: none;
   display: flex;
@@ -86,7 +82,6 @@ body {
   transition: color 0.3s ease;
 }
 
-/* Underline */
 .nav-links li a::after {
   content: "";
   position: absolute;
@@ -103,7 +98,6 @@ body {
   transition: width 0.35s ease;
 }
 
-/* Hover */
 .nav-links li a:hover {
   color: #ff9900c4;
 }
@@ -112,7 +106,7 @@ body {
   width: 100%;
 }
 
-/* Active */
+
 .nav-links li a.active {
   color: #ff9900;
 }
@@ -121,7 +115,6 @@ body {
   width: 100%;
 }
 
-/* ===== MENU TOGGLE ===== */
 .menu-toggle {
   display: none;
   font-size: 1.4rem;
@@ -143,7 +136,6 @@ body {
   display: inline;
 }
 
-/* ===== MOBILE MENU ===== */
 @media (max-width: 768px) {
   .navbar {
     padding: 0.6rem 1.4rem;
