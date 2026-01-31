@@ -3,19 +3,10 @@
   padding: 0;
   box-sizing: border-box;
    scrollbar-width: thin;
-  scrollbar-color: #ff9800 #0b0b0b;
-}
-:root {
-  --bg-dark: #0b0b0b;
-  --bg-dark-2: #111;
-  --gold: #ff9800;
-  --gold-light: #ffb347;
-  --text-light: #ffffff;
-  --text-muted: #cfcfcf;
-  --border-glow: rgba(255, 152, 0, 0.35);
+  scrollbar-color: #ff9900c4 #0b0b0b;
 }
 ::selection {
-  background-color: var(--gold);
+  background-color:  #ff9900c4;
   color: #000;
 }
 
@@ -84,7 +75,7 @@ body {
 
 .nav-links li a {
   position: relative;
-  color: var(--text-light);
+  color: white;
   text-decoration: none;
   font-size: 0.95rem;
   font-weight: 500;
@@ -98,12 +89,12 @@ body {
   bottom: -6px;
   width: 0;
   height: 2px;
-  background: var(--gold);
+  background:  #ff9900c4;
   transition: width 0.3s ease;
 }
 
 .nav-links li a:hover {
-  color: var(--gold);
+  color:  #ff9900c4);
 }
 
 .nav-links li a:hover::after {
@@ -115,7 +106,7 @@ body {
   font-size: 1.2rem;
   background: none;
   border: none;
-  color: var(--gold);
+  color:  #ff9900c4;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
@@ -180,7 +171,7 @@ body {
 .hero {
   margin-top: 39px;
   min-height: 80vh;
-  color: var(--text-light);
+  color: white;
   display: flex;
   align-items: center;
   padding: 2rem;
@@ -246,7 +237,7 @@ body {
 }
 .hero-cta-group {
   display: flex;
-  gap: 0.8rem;                 /* space between buttons */
+  gap: 0.3rem;                 /* space between buttons */
   align-items: center;
   justify-content: flex-start;
   margin-top: 1.4rem;
@@ -257,10 +248,13 @@ body {
   .hero-cta-group {
     flex-direction: column;
     width: 100%;
+      gap: 0rem;                 /* space between buttons */
+
   }
 
   .hero-cta-group .btn {
     width: 100%;
+    padding: 2px;
     justify-content: center;
   }
 }
@@ -750,7 +744,7 @@ body {
 }
 footer {
   background: linear-gradient(to right, #000, #111);
-  color: var(--text-light);
+  color: white;
   text-align: center;
   padding: 2rem 1rem 1.5rem;
   position: relative;
@@ -764,7 +758,7 @@ footer::before {
   left: 50%;
   width: 309px;
   height: 1px;
-  background: linear-gradient(to right, transparent, var(--gold), transparent);
+  background: linear-gradient(to right, transparent,  #ff9900c4, transparent);
   transform: translateX(-50%);
 }
 
