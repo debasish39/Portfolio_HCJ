@@ -115,9 +115,6 @@
     </header>
 
   <section class="hero" id="hero">
-  <!-- Particles background -->
-  <div id="particles-bg"></div>
-
   <div class="hero-content">
     <!-- Text -->
     <div
@@ -133,13 +130,11 @@
         data-aos-delay="300"
         data-aos-duration="700"
       >
-        <i class="fa-brands fa-python"></i>
-        Python Developer
+        <span id="typed-badge"></span>
       </span>
 
       <!-- Intro -->
-      <h3 data-aos="fade-up" data-aos-delay="450" data-aos-duration="900">
-        <i class="fa-solid fa-hand-wave"></i>
+      <h3 data-aos="fade-up" data-aos-delay="450" data-aos-duration="900"style="text-align: justify;">
         Hello, I’m <span>Debasish Panda</span>, a Python Full Stack
         Developer passionate about building clean, scalable, and
         user-focused web applications using <strong>React</strong> and
@@ -604,5 +599,28 @@
         },
       });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.min.js"></script>
+<script>
+  new Typed("#typed-badge", {
+    strings: [
+      "🐍 Django Developer",
+      "⚡ Full-Stack Software Developer",
+      "🌐 REST API Designer",
+      "📦 DRF Architecture Specialist",
+      "🎨 React.js Frontend",
+      "🧰MySQL Wizard",
+      "☁️ Deployed on Render,Netlify & Vercel",
+      "⚙️ Git & CI/CD Practitioner"
+    ],
+    typeSpeed: 55,
+    backSpeed: 15,
+    backDelay: 100,
+    startDelay: 400,
+    loop: true,
+    smartBackspace: true,
+    showCursor: true
+  });
+</script>
+
   </body>
 </html>

@@ -35,27 +35,27 @@ body {
     ),
     linear-gradient(to bottom, #442d012e, #111111);
   color: var(--text-muted);
-  overflow;
+  /* overflow; */
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.6rem 1.3rem;
+  padding: 0.6rem 3rem;
 
   background: linear-gradient(
     to right,
     rgba(58, 36, 5, 0.207),
     rgba(15, 12, 6, 0.85)
   );
-
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-
-  position: sticky;
+  position: fixed;        /* ✅ FIXED */
   top: 0;
-  z-index: 1000;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
 
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
   border-bottom: 1px solid rgba(245, 175, 68, 0.484);
@@ -63,7 +63,7 @@ body {
 .logo {
   font-family: "Satisfy", cursive;
   font-size: 1.3rem;
-  font-weight: 300;
+  font-weight: 600;
   letter-spacing: 1.5px;
 
   background: linear-gradient(135deg, #cd7014, #ff9500d8);
@@ -137,6 +137,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  .navbar{
+      padding: 0.6rem 1.2rem;
+
+  }
   .menu-toggle {
     display: block;
   }
@@ -155,7 +159,7 @@ body {
     gap: 1.2rem;
 
     max-height: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     opacity: 0;
 
     transition: all 0.35s ease;
@@ -174,6 +178,7 @@ body {
 
 /* Hero layout with image */
 .hero {
+  margin-top: 39px;
   min-height: 80vh;
   color: var(--text-light);
   display: flex;
@@ -376,7 +381,7 @@ body {
 /* Section spacing refinement */
 .skills-section {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* Swiper container */
@@ -556,7 +561,7 @@ body {
   );
   border: 1px solid rgba(255, 152, 0, 0.35);
   border-radius: 16px;
-  overflow: hidden;
+  /* overflow: hidden; */
 
   transition:
     transform 0.35s ease,
@@ -689,7 +694,7 @@ body {
   font-size: 1rem;
   text-decoration: none;
   transition: all 0.35s ease;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .footer-icons a::after {
@@ -804,7 +809,7 @@ html {
 .hero {
   position: relative;
   min-height: 80vh;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* particles canvas container */
